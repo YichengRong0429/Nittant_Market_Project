@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+          <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+          </head>
+    <title>Welcome to Nattany Market</title>
+    <style>
+        form {text-align: center;}
+    </style>
+    <style>
+        .button1 
+        {
+            background-color: #0094ff;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+    <style>
+        .button2 
+        {
+            background-color: #ff4400;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+        }
+    </style>
+    <style>
+        .button3 
+        {
+            background-color: #00ffd0;
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 7px 16px;
+            text-decoration: none;
+            font-size: 8px;
+        }
+    </style>
+</head>
+
+
+    
+    <div style="text-align:center">
+        <h1> Welcome to Nattany Market</h1>
+        <p>Please tell me what Categorie are you looking for :)</p>
+        <br>
+        <br>
+        <br>
+        <form action="shopping.html" method="POST">
+            <button name="root" value="Root" class="button1">Categories</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        {% for catName in answer1 %}
+        <form action="shopping.html" method="POST">
+           <button name="root" value="{{catName[0]}}" class="button2">{{catName[0]}}</button>
+        </form>
+        {% endfor%}
+        <br>
+        <br>
+        <br>
+        {% for  Seller_Email,Listing_ID,Category,Title,Product_Name,Product_Description,Price,Quantity,chekP in answer2%}
+
+          <div class="container">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#num{{Listing_ID}}">{{Product_Name}}</button>
+            <div id="num{{Listing_ID}}" class="collapse">
+              <p> Seller Email: {{Seller_Email}}</p>
+              <p> Listing ID: {{Listing_ID}}</p>
+              <p> Title: {{Title}}</p>
+              <p> Production Description: {{Product_Description}}</p>
+              <p> Quantity: {{Quantity}}</p>
+              <p> Price: {{Price}}</p>
+              <p> Category: {{Category}}</p>
+              <p> chekP: {{chekP}}</p>
+            </div>
+          </div>
+        {% endfor%}
+    </div>
+</body>
+</html>

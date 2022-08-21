@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title></title>
+</head>
+<div class="container">
+    <div class="row gutters">
+    <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+    <div class="card h-100">
+        <div class="card-body">
+            <div class="account-settings">
+                <div class="user-profile">
+                    <div class="user-avatar">
+                    <br>
+                    <br>
+                        <h2 class="name">Welcome!</h2>
+                    </div>
+                    <h5 class="user-name">{{name1}} {{name2}}</h5>
+                    <h6 class="user-email">{{email}}</h6>
+                </div>
+                <div class="about">
+                    <br>
+                    <br>
+                    <br>
+                    <h5></h5>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+    <div class="card h-100">
+        <div class="card-body">
+            <div class="row gutters">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h6 class="mb-2 text-primary">Personal Details</h6>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <br>{{name1}} {{name2}}
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                        <label for="eMail">Email:</label>
+                        <br>{{email}}
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <br>{{gender}}
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                        <label for="website">Age:</label>
+                        <br>{{age}}
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                        <label for="website">Credit Card:</label>
+                        <br>xxxx-xxxx-xxxx-{{credit1}}{{credit2}}{{credit3}}{{credit4}}
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                        <label for="gender">Account Number:</label>
+                        <br>{{account_num}}
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">Balance:</label>
+                        <br>${{balance}}
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">Rounting Number:</label>
+                        <br>{{rounting_num}}
+                    </div>
+                </div>
+            </div>
+            <div class="row gutters">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h6 class="mt-3 mb-2 text-primary">Address:</h6>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                        <label for="Street">Home Address:</label>
+                        <br>{{City}}, {{street_name}} {{Str_num}}, {{State}}, {{Zipcode}}
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                      
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                        <label for="sTate">Billing Address:</label>
+                        <br>{{City1}}, {{street_name1}} {{Str_num1}}, {{State1}}, {{Zipcode1}}
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row gutters">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h7 class="mt-3 mb-2 text-primary">If you would like to change your password please enter here:</h7>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <div class="form-group">
+                        <form action="userPage.html" method="POST">
+                            <div class="form-group">
+                                <label for="newPass">New Password:</label>
+                                <input type="password" name="user_newPassword" required class="form-control">
+                                <br><button type="submit" class="btn btn-primary">Submit!</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row gutters">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h7 class="mt-3 mb-2 text-primary">If you would like to list a new item please click here:</h7>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <a class="btn btn-success" href="publish.html" role="button">Listing Item</a>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <div class="row gutters">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h8 class="mt-3 mb-2 text-primary">Your listing items!</h8>
+                
+                {% for  Listing_ID,Category,Title,Product_Name,Product_Description,Price,Quantity,Category in answer2%}
+                  <div class="container">
+                    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#num{{Listing_ID}}">{{Product_Name}}</button>
+                    <div id="num{{Listing_ID}}" class="collapse">
+                      <p> Listing ID: {{Listing_ID}}</p>
+                      <p> Title: {{Title}}</p>
+                      <p> Production Description: {{Product_Description}}</p>
+                      <p> Quantity: {{Quantity}}</p>
+                      <p> Price: {{Price}}</p>
+                      <p> Category: {{Category}}</p>
+                    </div>
+                  </div>
+                  <br>
+                {% endfor%}
+                <div class="row gutters">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h8 class="mt-3 mb-2 text-primary">Your unlisting items!</h8>
+                    
+                    {% for  Listing_ID,Category,Title,Product_Name,Product_Description,Price,Quantity,Category in answer3%}
+                      <div class="container">
+                        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#num{{Listing_ID}}">{{Product_Name}}</button>
+                        <div id="num{{Listing_ID}}" class="collapse">
+                          <p> Listing ID: {{Listing_ID}}</p>
+                          <p> Title: {{Title}}</p>
+                          <p> Production Description: {{Product_Description}}</p>
+                          <p> Quantity: {{Quantity}}</p>
+                          <p> Price: {{Price}}</p>
+                          <p> Category: {{Category}}</p>
+                        </div>
+                      </div>
+                      <br>
+                    {% endfor%}
+                </div>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <div class="row gutters">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <h8 class="mt-3 mb-2 text-primary">Your listing items!</h8>
+                    <form action="/vendors.html" method="POST">
+                    <div class="form-group">
+                        <label for="text">Your item ID:</label>
+                        <input type="text" name="item_id" required class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">ENTER</button>
+                    </form>
+            
+                <br>
+
+                <div class="row gutters">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <h7 class="mt-3 mb-2 text-primary">If you would like shopping please click here:</h7>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <a class="btn btn-success" href="shopping.html" role="button">Shopping Right Now</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+   
+    </div>
+    </div>
+    </div>
+<body>
+    
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+</body>
+</html>
